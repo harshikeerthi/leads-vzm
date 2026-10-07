@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { X, Calendar, User, Phone, ChevronRight, Clock, ShieldCheck } from 'lucide-react';
 import { Translation } from '../data/translations';
-import { getUpcomingSaturdays } from '../utils/saturdays';
 
 interface RegistrationModalProps {
   isOpen: boolean;
@@ -11,13 +10,11 @@ interface RegistrationModalProps {
 }
 
 export const RegistrationModal: React.FC<RegistrationModalProps> = ({ isOpen, onClose, onFormSubmit, t }) => {
-  const isTe = t.nav.brandName.includes('మెడ్సీ');
-  const saturdayOptions = getUpcomingSaturdays(isTe ? 'te' : 'en');
   const [formData, setFormData] = useState({
     name: '',
     phone: '',
     age: '',
-    date: saturdayOptions[0]?.value || '',
+    date: new Date().toISOString().split('T')[0],
     slot: t.hero.slotOptions[0] || '10:00 AM - 06:00 PM'
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -33,7 +30,7 @@ export const RegistrationModal: React.FC<RegistrationModalProps> = ({ isOpen, on
       setIsSubmitting(false);
       onFormSubmit({
         ...formData,
-        formSource: 'FREE MEDICAL CAMP Consultation Registration'
+        formSource: 'Doctor Consultation Appointment Booking'
       });
       onClose();
     }, 600);
@@ -134,18 +131,14 @@ export const RegistrationModal: React.FC<RegistrationModalProps> = ({ isOpen, on
               </label>
               <div className="relative">
                 <Calendar className="w-4 h-4 absolute left-3 top-3 text-[#56335B] pointer-events-none" />
-                <select
+                <input
+                  type="date"
                   required
+                  min={new Date().toISOString().split('T')[0]}
                   value={formData.date}
                   onChange={(e) => setFormData({ ...formData, date: e.target.value })}
                   className="w-full pl-9 pr-3 py-2.5 text-xs sm:text-sm bg-white border border-[#652D6C]/25 rounded-xl focus:ring-2 focus:ring-[#9A389F] focus:border-[#652D6C] outline-none font-semibold text-[#2A102D]"
-                >
-                  {saturdayOptions.map((sat) => (
-                    <option key={sat.value} value={sat.value}>
-                      {sat.label}
-                    </option>
-                  ))}
-                </select>
+                />
               </div>
             </div>
 

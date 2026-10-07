@@ -146,8 +146,8 @@ export const translations: Record<Language, Translation> = {
     nav: {
       brandName: "మెడ్సీ IVF",
       tagline: "MIRACLES MADE HERE",
-      freeCampBadge: "ఉచిత మెడికల్ క్యాంప్",
-      phone: "+91 95025 34222",
+      freeCampBadge: "డాక్టర్ సంప్రదింపులు",
+      phone: "+91 94949 86611",
       bookAppointment: "అపాయింట్మెంట్ బుక్ చేయండి",
       emergencyCall: "నేరుగా కాల్ చేయండి",
       topBannerText: "ప్రతి నెల ప్రతి శనివారం నిర్వహించబడే ఉచిత మెడికల్ క్యాంప్",
@@ -155,11 +155,11 @@ export const translations: Record<Language, Translation> = {
       bookNow: "ఇప్పుడే బుక్ చేయండి",
       topBannerBadge: "ఉచిత సంప్రదింపులు • పరిమిత స్లాట్‌లు",
       topBannerTitle: "ప్రతి నెల ప్రతి శనివారం నిర్వహించబడే ఉచిత మెడికల్ క్యాంప్",
-      topBannerSubtitle: "ఈ రోజే మీ ఉచిత స్లాట్‌ను బుక్ చేసుకోండి మరియు వైజాగ్ టాప్ ఫెర్టిలిటీ నిపుణులను సంప్రదించండి.",
+      topBannerSubtitle: "ఈ రోజే మీ ఉచిత స్లాట్‌ను బుక్ చేసుకోండి మరియు విజయనగరం టాప్ ఫెర్టిలిటీ నిపుణులను సంప్రదించండి.",
       topBannerButton: "మీ ఉచిత స్లాట్‌ను బుక్ చేసుకోండి",
-      campFormTitle: "ఉచిత మెడికల్ క్యాంప్ రిజిస్ట్రేషన్",
-      campFormSubtitle: "ఉచిత నిపుణుల సంప్రదింపుల కోసం మీ ఉచిత స్లాట్‌ను ఇప్పుడే బుక్ చేసుకోండి",
-      campLocation: "మెడ్సీ IVF, చిన్నగదిలి ప్లాట్ 9A, హెల్త్ సిటీ, విశాఖపట్నం, అడవివరం, ఆంధ్రప్రదేశ్ 530040"
+      campFormTitle: "డాక్టర్ సంప్రదింపుల అపాయింట్మెంట్ బుకింగ్",
+      campFormSubtitle: "మా ఫెర్టిలిటీ నిపుణులతో సంప్రదింపుల కోసం మీ స్లాట్‌ను బుక్ చేసుకోండి",
+      campLocation: "వైజాగ్ IVF సెంటర్, డోర్ నెం: M1, వెంకటేశ్వర కాంప్లెక్స్, ధర్మపురి జంక్షన్ (మోర్ సూపర్ మార్కెట్ ఎదురుగా), విజయనగరం"
     },
     hero: {
       badge: "",
@@ -169,7 +169,7 @@ export const translations: Record<Language, Translation> = {
       headlinePart2: "",
       tagline: "అత్యుత్తమ ఫెర్టిలిటీ సంరక్షణ. తల్లిదండ్రులు కావాలనే మీ ప్రయాణం ఇక్కడే మొదలవుతుంది.",
       subtext: "రుజువైన విజయవంతమైన రేట్లు, అగ్రశ్రేణి సంతానలేమి నిపుణులు మరియు అందుబాటు ధరల సంపూర్ణ చికిత్సా ప్రణాళికల కోసం మెడ్సీని ఎంచుకోండి. ఎటువంటి దాగి ఉన్న రుసుములు లేదా రిజిస్ట్రేషన్ ఛార్జీలు లేవు — మీరు తల్లిదండ్రులు కావడానికి తోడ్పడే నిజమైన నిపుణుల సంరక్షణ మాత్రమే.",
-      locationBadge: "అరిలోవ హెల్త్ సిటీ, విశాఖపట్నం",
+      locationBadge: "డోర్ నెం: M1, వెంకటేశ్వర కాంప్లెక్స్, ధర్మపురి జంక్షన్, విజయనగరం",
       offerBadge: "SPECIAL DISCOUNT PACKAGE OFFER",
       offerText: "IVF చికిత్స కేవలం ₹1.8 లక్షలకే!",
       offerOriginalPrice: "సాధారణ మార్కెట్ ధర: ₹1.9 లక్షలు",
@@ -278,29 +278,19 @@ export const translations: Record<Language, Translation> = {
       disclaimer: "గమనిక: రోగి ఆరోగ్య స్థితి మరియు వైద్యుల నివేదికల ఆధారంగా ఛార్జీలలో స్వల్ప మార్పులు ఉండవచ్చు."
     },
     doctors: {
-      badge: "మా స్పెషలిస్ట్ డాక్టర్స్",
+      badge: "మా స్పెషలిస్ట్ డాక్టర్",
       title: "మా ఫెర్టిలిటీ నిపుణులు",
-      subtitle: "దశాబ్దాల అనుభవం కలిగిన ప్రముఖ సంతానలేమి వైద్యుల బృందం మీ కలల కుటుంబాన్ని साकारం చేయడానికి నిరంతరం కృషి చేస్తోంది.",
+      subtitle: "అనుభవం కలిగిన ప్రముఖ సంతానలేమి వైద్యురాలు మీ కలల కుటుంబాన్ని సాకారం చేయడానికి నిరంతరం కృషి చేస్తున్నారు.",
       list: [
         {
-          id: "dr-sireesha",
-          name: "డా. సిరీష రాణి",
-          title: "Founder & MD | Senior Infertility Specialist",
-          qualifications: "MBBS, DNB (Ob & Gyn), DRM (Kiel Germany)",
-          expBadge: "20+ YEARS EXP",
-          photo: "/dr-sireesha-rani.png",
-          bio: "జర్మన్ కీల్ IVF ప్రోటోకాల్స్, రీకరెంట్ వైఫల్యాలు మరియు హై-రిస్క్ ప్రెగ్నెన్సీ సంరక్షణలో ప్రత్యేక నైపుణ్యం కలిగిన ప్రముఖ సంతానలేమి నిపుణులు.",
-          achievementBadge: "8,000+ Success Stories"
-        },
-        {
-          id: "dr-sudeshna",
-          name: "డా. సుధేష్ణాదేవి",
-          title: "Fertility & Surgery Expert",
-          qualifications: "MBBS, DNB (Ob & Gyn), FRM, FMAS, Dip.Cos.Gynecology",
-          expBadge: "12+ YEARS EXP",
-          photo: "/dr-sudeshna-devi.png",
-          bio: "లాపరోస్కోపిక్ సర్జరీ, హిస్టెరోస్కోపీ, రిప్రొడక్టివ్ మెడిసిన్ మరియు వ్యక్తిగతీకరించిన అండాశయ ప్రేరణ విధానాలలో ప్రముఖ వైద్య నిపుణులు.",
-          achievementBadge: "Laparoscopic Specialist"
+          id: "dr-swarna-kumari",
+          name: "డా. స్వర్ణ కుమారి కొంచాడ",
+          title: "Fertility Consultant & Gynecologist",
+          qualifications: "MS OBG, Fellow in Reproductive Medicine, Gynec Laparoscopic Surgeon",
+          expBadge: "FERTILITY EXPERT",
+          photo: "/dr-swarna-kumari.png",
+          bio: "వ్యక్తిగతీకరించిన సంతానలేమి చికిత్స ప్రణాళికలు, అడ్వాన్స్‌డ్ IVF, IUI, అండాశయ ప్రేరణ మరియు గర్భధారణ సమయంలో రోగులకు పూర్తి నైతిక మద్దతు అందించడంలో ప్రముఖ వైద్యురాలు.",
+          achievementBadge: "Gynec Laparoscopic Surgeon"
         }
       ]
     },
@@ -365,18 +355,18 @@ export const translations: Record<Language, Translation> = {
     },
     footer: {
       aboutTitle: "మెడ్సీ IVF & హాస్పిటల్స్",
-      aboutText: "విశాఖపట్నంలో 8,000 పైగా విజయవంతమైన IVF కేసులతో అత్యుత్తమ సంతానలేమి చికిత్స నందిస్తున్న విశ్వసనీయ ఫెర్టిలిటీ సెంటర్.",
+      aboutText: "విజయనగరంలో 8,000 పైగా విజయవంతమైన IVF కేసులతో అత్యుత్తమ సంతానలేమి చికిత్స నందిస్తున్న విశ్వసనీయ ఫెర్టిలిటీ సెంటర్.",
       addressTitle: "ఆసుపత్రి చిరునామా",
-      addressValue: "ప్లాట్ నెం. 9A, హెల్త్ సిటీ, అరిలోవ, విశాఖపట్నం – 530040",
+      addressValue: "డోర్ నెం: M1, వెంకటేశ్వర కాంప్లెక్స్, ధర్మపురి జంక్షన్ (మోర్ సూపర్ మార్కెట్ ఎదురుగా), విజయనగరం.",
       phoneTitle: "హెల్ప్‌లైన్ & అపాయింట్మెంట్స్",
-      phoneValue: "+91 95025 34222",
+      phoneValue: "+91 94949 86611",
       hoursTitle: "పని చేయు సమయాలు",
       hoursValue: "సోమవారం - ఆదివారం: ఉదయం 9:00 - సాయంత్రం 6:00",
       copyright: "© 2026 MEDCY IVF & Hospitals. సర్వ హక్కులూ ప్రత్యేకించబడ్డాయి."
     },
     modal: {
       title: "అపాయింట్మెంట్ నమోదైంది! 🎉",
-      subtitle: "మెడ్సీ IVF ఉచిత మెడికల్ క్యాంప్ రిజిస్ట్రేషన్ విజయవంతమైంది.",
+      subtitle: "మీ డాక్టర్ సంప్రదింపుల అపాయింట్మెంట్ విజయవంతంగా నమోదైంది.",
       tokenLabel: "బుకింగ్ టోకెన్ నంబర్",
       nameLabel: "పేరు",
       phoneLabel: "ఫోన్",
@@ -391,8 +381,8 @@ export const translations: Record<Language, Translation> = {
     nav: {
       brandName: "MEDCY IVF",
       tagline: "MIRACLES MADE HERE",
-      freeCampBadge: "FREE MEDICAL CAMP",
-      phone: "+91 95025 34222",
+      freeCampBadge: "DOCTOR CONSULTATION",
+      phone: "+91 94949 86611",
       bookAppointment: "Book Appointment",
       emergencyCall: "Call Now Direct",
       topBannerText: "Free Medical Camp Conducted Every Saturday of the Month",
@@ -400,11 +390,11 @@ export const translations: Record<Language, Translation> = {
       bookNow: "Book Now",
       topBannerBadge: "FREE CONSULTATION • LIMITED SLOTS",
       topBannerTitle: "Free Medical Camp Conducted Every Saturday of the Month",
-      topBannerSubtitle: "Book Your Free Slot Today and consult with Vizag's top fertility specialists.",
+      topBannerSubtitle: "Book Your Free Slot Today and consult with top fertility specialists in Vizianagaram.",
       topBannerButton: "Book Your Free Slot Today",
-      campFormTitle: "Free Medical Camp Registration",
-      campFormSubtitle: "Book your complimentary slot for a free expert fertility consultation",
-      campLocation: "Medcy IVF, Chinnagadili Plot 9A, Health City, Visakhapatnam, Adavivaram, Andhra Pradesh 530040"
+      campFormTitle: "Doctor Consultation Booking",
+      campFormSubtitle: "Book your appointment for a consultation with Dr. Swarna Kumari Konchada",
+      campLocation: "Vizag IVF Centre, Door No: M1, Venkateswara Complex, Dharmapuri Junction (opposite More Super Market), Vizianagaram"
     },
     hero: {
       badge: "",
@@ -414,7 +404,7 @@ export const translations: Record<Language, Translation> = {
       headlinePart2: "",
       tagline: "Expert fertility care. Your journey to parenthood starts here.",
       subtext: "Choose Medcy for proven success rates, top-tier fertility specialists, and highly affordable, all-inclusive treatment plans. No hidden fees, no registration charges—just genuine, expert care to help you become parents.",
-      locationBadge: "Arilova Health City, Visakhapatnam",
+      locationBadge: "Door No: M1, Venkateswara Complex, Dharmapuri Junction, Vizianagaram",
       offerBadge: "SPECIAL DISCOUNT PACKAGE OFFER",
       offerText: "IVF TREATMENT AT ₹1.8 LAKHS ONLY",
       offerOriginalPrice: "Standard Market Price: ₹1.9 Lakhs",
@@ -523,29 +513,19 @@ export const translations: Record<Language, Translation> = {
       disclaimer: "Note: Treatment fees may vary slightly depending on individualized clinical evaluation."
     },
     doctors: {
-      badge: "MEET THE EXPERTS",
-      title: "Meet the Experts",
-      subtitle: "Trusted medical leadership with decades of proven experience in complex infertility & gynecological procedures.",
+      badge: "MEET THE EXPERT",
+      title: "Meet the Expert",
+      subtitle: "Trusted medical leadership with proven experience in complex infertility & gynecological procedures.",
       list: [
         {
-          id: "dr-sireesha",
-          name: "Dr. Sireesha Rani",
-          title: "Founder & MD | Senior Infertility Specialist",
-          qualifications: "MBBS, DNB (Ob & Gyn), DRM (Kiel Germany)",
-          expBadge: "20+ YEARS EXP",
-          photo: "/dr-sireesha-rani.png",
-          bio: "Pioneer in reproductive medicine with advanced specialization in German Kiel IVF protocols, recurrent failures, and high-risk pregnancy care.",
-          achievementBadge: "8,000+ Success Stories"
-        },
-        {
-          id: "dr-sudeshna",
-          name: "Dr. Sudheshna Devi",
-          title: "Fertility & Surgery Expert",
-          qualifications: "MBBS, DNB (Ob & Gyn), FRM, FMAS, Dip.Cos.Gynecology",
-          expBadge: "12+ YEARS EXP",
-          photo: "/dr-sudeshna-devi.png",
-          bio: "Expert in laparoscopic surgery, hysteroscopy, reproductive medicine, and personalized ovulation induction protocols.",
-          achievementBadge: "Laparoscopic Specialist"
+          id: "dr-swarna-kumari",
+          name: "Dr. Swarna Kumari Konchada",
+          title: "Fertility Consultant & Gynecologist",
+          qualifications: "MS OBG, Fellow in Reproductive Medicine, Gynec Laparoscopic Surgeon",
+          expBadge: "FERTILITY EXPERT",
+          photo: "/dr-swarna-kumari.png",
+          bio: "She provides personalized infertility treatment plans, including advanced In Vitro Fertilization (IVF), Intrauterine Insemination (IUI), ovulation induction, and emotional support throughout the conception process.",
+          achievementBadge: "Gynec Laparoscopic Surgeon"
         }
       ]
     },
@@ -610,18 +590,18 @@ export const translations: Record<Language, Translation> = {
     },
     footer: {
       aboutTitle: "MEDCY IVF & Hospitals",
-      aboutText: "Visakhapatnam's premier fertility & reproductive medicine institute with 8,000+ successful IVF cases.",
+      aboutText: "Vizianagaram's premier fertility & reproductive medicine institute with 8,000+ successful IVF cases.",
       addressTitle: "Hospital Address",
-      addressValue: "Plot No. 9A, Health City, Arilova, Visakhapatnam – 530040",
+      addressValue: "Door No: M1, Venkateswara Complex, Dharmapuri Junction (opposite More Super Market), Vizianagaram",
       phoneTitle: "Helpline & Appointments",
-      phoneValue: "+91 95025 34222",
+      phoneValue: "+91 94949 86611",
       hoursTitle: "Working Hours",
       hoursValue: "Mon - Sun: 9:00 AM - 6:00 PM",
       copyright: "© 2026 MEDCY IVF & Hospitals. All rights reserved."
     },
     modal: {
       title: "Appointment Reserved! 🎉",
-      subtitle: "Your registration for Medcy IVF Free Medical Camp is confirmed.",
+      subtitle: "Your doctor consultation appointment is confirmed.",
       tokenLabel: "Booking Token No.",
       nameLabel: "Name",
       phoneLabel: "Phone",

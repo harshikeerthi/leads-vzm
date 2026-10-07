@@ -33,7 +33,7 @@ export const Hero: React.FC<HeroProps> = ({ t, onFormSubmit }) => {
   };
 
   return (
-    <section className="relative overflow-hidden bg-[#FAF6FA] min-h-[calc(100vh-8.5rem)] flex flex-col justify-center py-6 sm:py-8 lg:py-10 px-4 sm:px-8 lg:px-10 xl:px-14">
+    <section className="relative overflow-hidden bg-[#FAF6FA] min-h-[calc(100vh-4rem)] sm:min-h-[calc(100vh-5rem)] flex flex-col justify-center py-6 sm:py-8 lg:py-10 px-4 sm:px-8 lg:px-10 xl:px-14">
       {/* Desktop Hero IVF Banner Artwork Background - Full fidelity without cutting */}
       <div className="hidden lg:block absolute inset-0 z-0 pointer-events-none select-none overflow-hidden">
         <img

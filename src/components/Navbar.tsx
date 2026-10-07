@@ -1,5 +1,5 @@
 import React from 'react';
-import { Phone, Calendar, Globe, ChevronRight, MapPin } from 'lucide-react';
+import { Phone, Calendar } from 'lucide-react';
 import { Language, Translation } from '../data/translations';
 
 interface NavbarProps {
@@ -7,10 +7,10 @@ interface NavbarProps {
   setLang: (lang: Language) => void;
   t: Translation;
   onBookClick: () => void;
-  onOpenRegistrationModal: () => void;
+  onOpenRegistrationModal?: () => void;
 }
 
-export const Navbar: React.FC<NavbarProps> = ({ lang, setLang, t, onBookClick, onOpenRegistrationModal }) => {
+export const Navbar: React.FC<NavbarProps> = ({ lang, setLang, t, onBookClick }) => {
   return (
     <header className="sticky top-0 z-50 w-full backdrop-blur-xl bg-white/95 border-b border-[#652D6C]/15 shadow-sm transition-all duration-300">
       {/* Main Navbar */}
@@ -66,7 +66,7 @@ export const Navbar: React.FC<NavbarProps> = ({ lang, setLang, t, onBookClick, o
 
           {/* Direct Call Button (Desktop) */}
           <a
-            href="tel:+919502534222"
+            href="tel:+919494986611"
             className="hidden lg:flex items-center gap-2 px-4 py-2 rounded-full text-xs font-bold text-[#652D6C] bg-[#FAF3FB] hover:bg-[#652D6C] hover:text-white border border-[#652D6C]/30 transition-all group"
           >
             <Phone className="w-4 h-4 text-[#9A389F] group-hover:text-white transition-colors animate-pulse" />
@@ -82,72 +82,6 @@ export const Navbar: React.FC<NavbarProps> = ({ lang, setLang, t, onBookClick, o
             <span className="hidden sm:inline">{t.nav.bookAppointment}</span>
             <span className="sm:hidden">Book</span>
           </button>
-        </div>
-      </div>
-
-      {/* Top Reference Banner Bar Below Main Navbar */}
-      <div className="bg-gradient-to-r from-[#45144A] via-[#652D6C] to-[#8F2D95] text-white border-t border-b border-white/10 shadow-lg overflow-hidden py-2.5 sm:py-3 px-4 sm:px-6">
-        <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-3 sm:gap-6">
-          
-          {/* Scrolling Banner Text Ticker (Infinite Marquee) */}
-          <div className="w-full sm:flex-1 overflow-hidden relative mask-radial">
-            <div className="animate-marquee flex items-center gap-8 whitespace-nowrap">
-              {/* Loop track 1 */}
-              <div className="flex items-center gap-4 shrink-0">
-                <span className="text-lg sm:text-xl lg:text-2xl font-extrabold text-[#FFCC00] tracking-tight">{t.nav.freeCampBadge}</span>
-                <span className="text-xs sm:text-sm lg:text-base font-semibold text-purple-100">{t.nav.topBannerTitle}</span>
-                <span className="text-purple-100 font-medium text-xs sm:text-sm lg:text-base inline-flex items-center gap-1.5 bg-white/10 px-3 py-0.5 rounded-full border border-white/15">
-                  <MapPin className="w-3.5 h-3.5 text-pink-300 shrink-0" />
-                  <span>{t.nav.campLocation}</span>
-                </span>
-              </div>
-              <span className="text-yellow-400/60 font-bold text-lg">•</span>
-
-              <div className="flex items-center gap-4 shrink-0">
-                <span className="text-lg sm:text-xl lg:text-2xl font-extrabold text-[#FFCC00] tracking-tight">{t.nav.freeCampBadge}</span>
-                <span className="text-xs sm:text-sm lg:text-base font-semibold text-purple-100">{t.nav.topBannerTitle}</span>
-                <span className="text-purple-100 font-medium text-xs sm:text-sm lg:text-base inline-flex items-center gap-1.5 bg-white/10 px-3 py-0.5 rounded-full border border-white/15">
-                  <MapPin className="w-3.5 h-3.5 text-pink-300 shrink-0" />
-                  <span>{t.nav.campLocation}</span>
-                </span>
-              </div>
-              <span className="text-yellow-400/60 font-bold text-lg">•</span>
-
-              {/* Loop track 2 (exact duplicate for seamless 0% -> -50% continuous loop) */}
-              <div className="flex items-center gap-4 shrink-0">
-                <span className="text-lg sm:text-xl lg:text-2xl font-extrabold text-[#FFCC00] tracking-tight">{t.nav.freeCampBadge}</span>
-                <span className="text-xs sm:text-sm lg:text-base font-semibold text-purple-100">{t.nav.topBannerTitle}</span>
-                <span className="text-purple-100 font-medium text-xs sm:text-sm lg:text-base inline-flex items-center gap-1.5 bg-white/10 px-3 py-0.5 rounded-full border border-white/15">
-                  <MapPin className="w-3.5 h-3.5 text-pink-300 shrink-0" />
-                  <span>{t.nav.campLocation}</span>
-                </span>
-              </div>
-              <span className="text-yellow-400/60 font-bold text-lg">•</span>
-
-              <div className="flex items-center gap-4 shrink-0">
-                <span className="text-lg sm:text-xl lg:text-2xl font-extrabold text-[#FFCC00] tracking-tight">{t.nav.freeCampBadge}</span>
-                <span className="text-xs sm:text-sm lg:text-base font-semibold text-purple-100">{t.nav.topBannerTitle}</span>
-                <span className="text-purple-100 font-medium text-xs sm:text-sm lg:text-base inline-flex items-center gap-1.5 bg-white/10 px-3 py-0.5 rounded-full border border-white/15">
-                  <MapPin className="w-3.5 h-3.5 text-pink-300 shrink-0" />
-                  <span>{t.nav.campLocation}</span>
-                </span>
-              </div>
-              <span className="text-yellow-400/60 font-bold text-lg">•</span>
-            </div>
-          </div>
-
-          {/* Right Side: Prominent Yellow CTA Button (Pinned) */}
-          <div className="w-full sm:w-auto flex justify-center sm:justify-end shrink-0 z-10">
-            <button
-              onClick={onOpenRegistrationModal}
-              className="bg-[#FFCC00] hover:bg-[#FFD633] text-[#3D1443] font-extrabold shadow-lg hover:shadow-xl transition-all duration-200 flex items-center justify-center gap-2 shrink-0 group active:scale-95 border border-yellow-300/50 cursor-pointer w-full sm:w-auto text-xs sm:text-sm px-4 sm:px-5 py-2 sm:py-2.5 rounded-xl"
-            >
-              <Calendar className="w-4 h-4 text-[#3D1443] shrink-0" />
-              <span>{t.nav.topBannerButton}</span>
-              <ChevronRight className="w-4 h-4 text-[#3D1443] group-hover:translate-x-1 transition-transform shrink-0" />
-            </button>
-          </div>
-
         </div>
       </div>
     </header>
