@@ -168,10 +168,10 @@ export const RegistrationModal: React.FC<RegistrationModalProps> = ({ isOpen, on
             <ChevronRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
           </button>
 
-          <div className="flex items-center justify-center gap-1.5 text-[11px] text-[#56335B] font-medium pt-1">
-            <ShieldCheck className="w-3.5 h-3.5 text-emerald-600" />
+          <p className="text-center text-[11px] text-[#56335B] font-medium pt-1 leading-relaxed">
+            <ShieldCheck className="w-3.5 h-3.5 text-emerald-600 inline-block mr-1 align-text-bottom" />
             <span>{t.hero.privacyNote}</span>
-          </div>
+          </p>
 
         </form>
 

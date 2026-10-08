@@ -252,8 +252,8 @@ export const Hero: React.FC<HeroProps> = ({ t, onFormSubmit }) => {
                   <ChevronRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </button>
 
-                <p className="text-xs text-center text-[#56335B] font-medium pt-1 flex items-center justify-center gap-1">
-                  <span>🔒</span>
+                <p className="text-xs text-center text-[#56335B] font-medium pt-1 leading-relaxed">
+                  <span className="inline-block mr-1">🔒</span>
                   <span>{t.hero.privacyNote}</span>
                 </p>
 
