@@ -16,20 +16,20 @@ export const Navbar: React.FC<NavbarProps> = ({ lang, setLang, t, onBookClick })
       {/* Main Navbar */}
       <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 h-16 sm:h-20 flex items-center justify-between gap-1.5 sm:gap-4">
         {/* Brand Logos */}
-        <div className="flex items-center gap-1.5 sm:gap-4 shrink-0">
+        <div className="flex items-center gap-2 sm:gap-3.5 shrink-0">
           <a href="#" className="flex items-center group focus:outline-none">
             <img 
               src="/medcy-logo.png" 
               alt="Medcy IVF Logo" 
-              className="h-7 sm:h-12 lg:h-13 w-auto object-contain transition-transform group-hover:scale-105"
+              className="h-7 sm:h-11 lg:h-12 max-h-8 sm:max-h-11 lg:max-h-12 w-auto object-contain transition-transform group-hover:scale-105"
             />
           </a>
           <span className="h-5 sm:h-8 w-px bg-[#652D6C]/25" aria-hidden="true"></span>
           <a href="#" className="flex items-center group focus:outline-none">
             <img 
               src="/vizag-ivf-logo.png" 
-              alt="Vizag IVF Centre Gajuwaka Logo" 
-              className="h-7 sm:h-12 lg:h-13 w-auto object-contain transition-transform group-hover:scale-105"
+              alt="Vizag IVF Centre Logo" 
+              className="h-7 sm:h-11 lg:h-12 max-h-8 sm:max-h-11 lg:max-h-12 w-auto object-contain transition-transform group-hover:scale-105"
             />
           </a>
         </div>

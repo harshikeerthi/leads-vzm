@@ -159,7 +159,7 @@ export const translations: Record<Language, Translation> = {
       topBannerButton: "మీ ఉచిత స్లాట్‌ను బుక్ చేసుకోండి",
       campFormTitle: "డాక్టర్ సంప్రదింపుల అపాయింట్మెంట్ బుకింగ్",
       campFormSubtitle: "మా ఫెర్టిలిటీ నిపుణులతో సంప్రదింపుల కోసం మీ స్లాట్‌ను బుక్ చేసుకోండి",
-      campLocation: "వైజాగ్ IVF సెంటర్, డోర్ నెం: M1, వెంకటేశ్వర కాంప్లెక్స్, ధర్మపురి జంక్షన్ (మోర్ సూపర్ మార్కెట్ ఎదురుగా), విజయనగరం"
+      campLocation: "వైజాగ్ IVF సెంటర్, 100 అడుగుల రింగ్ రోడ్, సోనోవిజన్ పక్కన, ఐస్ ఫ్యాక్టరీ ఏరియా, సాయి నాథ్ కాలనీ, విజయనగరం, ఆంధ్రప్రదేశ్ 535002"
     },
     hero: {
       badge: "",
@@ -169,7 +169,7 @@ export const translations: Record<Language, Translation> = {
       headlinePart2: "",
       tagline: "అత్యుత్తమ ఫెర్టిలిటీ సంరక్షణ. తల్లిదండ్రులు కావాలనే మీ ప్రయాణం ఇక్కడే మొదలవుతుంది.",
       subtext: "రుజువైన విజయవంతమైన రేట్లు, అగ్రశ్రేణి సంతానలేమి నిపుణులు మరియు అందుబాటు ధరల సంపూర్ణ చికిత్సా ప్రణాళికల కోసం మెడ్సీని ఎంచుకోండి. ఎటువంటి దాగి ఉన్న రుసుములు లేదా రిజిస్ట్రేషన్ ఛార్జీలు లేవు — మీరు తల్లిదండ్రులు కావడానికి తోడ్పడే నిజమైన నిపుణుల సంరక్షణ మాత్రమే.",
-      locationBadge: "డోర్ నెం: M1, వెంకటేశ్వర కాంప్లెక్స్, ధర్మపురి జంక్షన్, విజయనగరం",
+      locationBadge: "100 అడుగుల రింగ్ రోడ్, సోనోవిజన్ పక్కన, విజయనగరం",
       offerBadge: "SPECIAL DISCOUNT PACKAGE OFFER",
       offerText: "IVF చికిత్స కేవలం ₹1.8 లక్షలకే!",
       offerOriginalPrice: "సాధారణ మార్కెట్ ధర: ₹1.9 లక్షలు",
@@ -357,7 +357,7 @@ export const translations: Record<Language, Translation> = {
       aboutTitle: "మెడ్సీ IVF & హాస్పిటల్స్",
       aboutText: "విజయనగరంలో 8,000 పైగా విజయవంతమైన IVF కేసులతో అత్యుత్తమ సంతానలేమి చికిత్స నందిస్తున్న విశ్వసనీయ ఫెర్టిలిటీ సెంటర్.",
       addressTitle: "ఆసుపత్రి చిరునామా",
-      addressValue: "డోర్ నెం: M1, వెంకటేశ్వర కాంప్లెక్స్, ధర్మపురి జంక్షన్ (మోర్ సూపర్ మార్కెట్ ఎదురుగా), విజయనగరం.",
+      addressValue: "వైజాగ్ IVF సెంటర్, 100 అడుగుల రింగ్ రోడ్, సోనోవిజన్ పక్కన, ఐస్ ఫ్యాక్టరీ ఏరియా, సాయి నాథ్ కాలనీ, విజయనగరం, ఆంధ్రప్రదేశ్ 535002.",
       phoneTitle: "హెల్ప్‌లైన్ & అపాయింట్మెంట్స్",
       phoneValue: "+91 94949 86611",
       hoursTitle: "పని చేయు సమయాలు",
@@ -394,7 +394,7 @@ export const translations: Record<Language, Translation> = {
       topBannerButton: "Book Your Free Slot Today",
       campFormTitle: "Doctor Consultation Booking",
       campFormSubtitle: "Book your appointment for a consultation with Dr. Swarna Kumari Konchada",
-      campLocation: "Vizag IVF Centre, Door No: M1, Venkateswara Complex, Dharmapuri Junction (opposite More Super Market), Vizianagaram"
+      campLocation: "Vizag IVF - Best Fertility Clinic in Vizianagaram, Vizag IVF Centre, 100 Ft Ring Rd, beside Sonovision, Ice Factory Area, Sai Nath Colony, Vizianagaram, Andhra Pradesh 535002"
     },
     hero: {
       badge: "",
@@ -404,7 +404,7 @@ export const translations: Record<Language, Translation> = {
       headlinePart2: "",
       tagline: "Expert fertility care. Your journey to parenthood starts here.",
       subtext: "Choose Medcy for proven success rates, top-tier fertility specialists, and highly affordable, all-inclusive treatment plans. No hidden fees, no registration charges—just genuine, expert care to help you become parents.",
-      locationBadge: "Door No: M1, Venkateswara Complex, Dharmapuri Junction, Vizianagaram",
+      locationBadge: "100 Ft Ring Rd, beside Sonovision, Vizianagaram",
       offerBadge: "SPECIAL DISCOUNT PACKAGE OFFER",
       offerText: "IVF TREATMENT AT ₹1.8 LAKHS ONLY",
       offerOriginalPrice: "Standard Market Price: ₹1.9 Lakhs",
@@ -592,7 +592,7 @@ export const translations: Record<Language, Translation> = {
       aboutTitle: "MEDCY IVF & Hospitals",
       aboutText: "Vizianagaram's premier fertility & reproductive medicine institute with 8,000+ successful IVF cases.",
       addressTitle: "Hospital Address",
-      addressValue: "Door No: M1, Venkateswara Complex, Dharmapuri Junction (opposite More Super Market), Vizianagaram",
+      addressValue: "Vizag IVF - Best Fertility Clinic in Vizianagaram, Vizag IVF Centre, 100 Ft Ring Rd, beside Sonovision, Ice Factory Area, Sai Nath Colony, Vizianagaram, Andhra Pradesh 535002",
       phoneTitle: "Helpline & Appointments",
       phoneValue: "+91 94949 86611",
       hoursTitle: "Working Hours",

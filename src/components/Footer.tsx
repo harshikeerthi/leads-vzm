@@ -7,7 +7,7 @@ interface FooterProps {
 }
 
 export const Footer: React.FC<FooterProps> = ({ t }) => {
-  const mapDirectionsUrl = "https://www.google.com/maps/dir/?api=1&destination=Door+No:+M1,+Venkateswara+Complex,+Dharmapuri+Junction,+Vizianagaram&dir_action=navigate";
+  const mapDirectionsUrl = "https://www.google.com/maps/dir/?api=1&destination=Vizag+IVF+-+Best+Fertility+Clinic+in+Vizianagaram,+100+Ft+Ring+Rd,+beside+Sonovision,+Sai+Nath+Colony,+Vizianagaram,+Andhra+Pradesh+535002&dir_action=navigate";
 
   return (
     <footer className="bg-gradient-to-b from-[#4D1F53] to-[#2A102D] text-white pt-16 pb-12 relative overflow-hidden">
@@ -18,7 +18,7 @@ export const Footer: React.FC<FooterProps> = ({ t }) => {
           {/* Brand & About */}
           <div className="lg:col-span-4 space-y-4">
             {/* Brand Logos with white background */}
-            <div className="inline-flex items-center gap-3 bg-white px-3.5 py-2 rounded-xl">
+            <div className="inline-flex items-center gap-3.5 sm:gap-4 bg-white px-4 py-2.5 rounded-xl shadow-sm">
               <a href="#" className="focus:outline-none hover:opacity-95 transition-opacity">
                 <img 
                   src="/medcy-logo.png" 
@@ -26,11 +26,11 @@ export const Footer: React.FC<FooterProps> = ({ t }) => {
                   className="h-8 sm:h-10 w-auto object-contain" 
                 />
               </a>
-              <span className="h-6 w-px bg-gray-300" aria-hidden="true"></span>
+              <span className="h-6 sm:h-8 w-px bg-gray-300" aria-hidden="true"></span>
               <a href="#" className="focus:outline-none hover:opacity-95 transition-opacity">
                 <img 
                   src="/vizag-ivf-logo.png" 
-                  alt="Vizag IVF Centre Gajuwaka Logo" 
+                  alt="Vizag IVF Centre Logo" 
                   className="h-8 sm:h-10 w-auto object-contain" 
                 />
               </a>
@@ -91,7 +91,7 @@ export const Footer: React.FC<FooterProps> = ({ t }) => {
               {/* Map Iframe */}
               <iframe
                 title="Vizag IVF Centre Vizianagaram Location"
-                src="https://maps.google.com/maps?q=Door+No:+M1,+Venkateswara+Complex,+Dharmapuri+Junction,+opposite+More+Super+Market,+Vizianagaram&t=&z=16&ie=UTF8&iwloc=&output=embed"
+                src="https://maps.google.com/maps?q=Vizag+IVF+-+Best+Fertility+Clinic+in+Vizianagaram,+100+Ft+Ring+Rd,+beside+Sonovision,+Sai+Nath+Colony,+Vizianagaram,+Andhra+Pradesh+535002&t=&z=16&ie=UTF8&iwloc=&output=embed"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
