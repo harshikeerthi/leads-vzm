@@ -4,6 +4,7 @@ import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
 import { PackageInclusions } from './components/PackageInclusions';
 import { DoctorsSection } from './components/DoctorsSection';
+import { GoogleReviews } from './components/GoogleReviews';
 import { Footer } from './components/Footer';
 import { BookingModal } from './components/BookingModal';
 import { RegistrationModal } from './components/RegistrationModal';
@@ -59,10 +60,15 @@ export function App() {
           onBookClick={handleBookClick} 
         />
 
-        {/* 3. Meet the Expert Section (Dr. Swarna Kumari Konchada) */}
+        {/* 3. Meet the Expert Section (Dr. Sireesha Rani & Dr. Swarna Kumari) */}
         <DoctorsSection 
           t={t} 
           onDoctorClick={handleBookClick} 
+        />
+
+        {/* 4. Google Reviews Section */}
+        <GoogleReviews 
+          t={t} 
         />
       </main>
 

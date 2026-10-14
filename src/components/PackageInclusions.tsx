@@ -54,7 +54,7 @@ export const PackageInclusions: React.FC<PackageInclusionsProps> = ({ t }) => {
   };
 
   return (
-    <section id="inclusions" className="py-14 sm:py-20 bg-gradient-to-b from-[#FAF6FA] via-[#FAF3FB] to-[#FAF6FA] relative overflow-hidden">
+    <section id="inclusions" className="py-10 sm:py-14 bg-gradient-to-b from-[#FAF6FA] via-[#FAF3FB] to-[#FAF6FA] relative overflow-hidden">
       {/* Background Subtle Ambient Glows */}
       <div className="absolute top-1/4 -left-20 w-80 h-80 bg-[#652D6C]/5 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute bottom-1/4 -right-20 w-80 h-80 bg-[#9A389F]/5 rounded-full blur-3xl pointer-events-none" />
@@ -62,8 +62,8 @@ export const PackageInclusions: React.FC<PackageInclusionsProps> = ({ t }) => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-8 sm:mb-12">
-          <h2 className="text-3xl sm:text-5xl font-extrabold text-[#2A102D] tracking-tight">
+        <div className="text-center max-w-3xl mx-auto mb-6 sm:mb-8">
+          <h2 className="text-2xl sm:text-4xl font-extrabold text-[#2A102D] tracking-tight">
             {t.inclusions.title}
           </h2>
 

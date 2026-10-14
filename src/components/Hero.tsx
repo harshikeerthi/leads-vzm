@@ -38,7 +38,7 @@ export const Hero: React.FC<HeroProps> = ({ t, onFormSubmit }) => {
       <div className="hidden lg:block absolute inset-0 z-0 pointer-events-none select-none overflow-hidden">
         <img
           src="/hero-ivf-banner.png"
-          alt="Medcy IVF Fertility Care"
+          alt="Vizag IVF Fertility Care"
           className="absolute right-0 top-0 h-full w-full object-contain object-right"
         />
         {/* Soft left gradient protecting text & form legibility without obscuring the mother, baby & embryo on the right */}
@@ -54,12 +54,12 @@ export const Hero: React.FC<HeroProps> = ({ t, onFormSubmit }) => {
         <div className="lg:hidden w-full mb-5 rounded-2xl overflow-hidden shadow-lg border border-[#652D6C]/15 relative bg-white">
           <img
             src="/hero-ivf-banner.png"
-            alt="Medcy IVF Fertility Care"
+            alt="Vizag IVF Fertility Care"
             className="w-full h-auto aspect-[16/9] object-contain bg-gradient-to-r from-[#FAF6FA] to-[#F5EAF7]"
           />
           <div className="absolute bottom-2.5 left-3 right-3 flex items-center justify-between text-white pointer-events-none">
             <span className="bg-[#652D6C]/90 backdrop-blur-sm px-2.5 py-0.5 rounded-full text-[10px] font-bold tracking-wider uppercase shadow-sm">
-              Medcy IVF
+              Vizag IVF
             </span>
             <span className="bg-yellow-400 text-[#4D1F53] px-2.5 py-0.5 rounded-full text-[10px] font-extrabold shadow-sm">
               8,000+ Families
@@ -113,18 +113,22 @@ export const Hero: React.FC<HeroProps> = ({ t, onFormSubmit }) => {
                     <span>{t.hero.offerBadge}</span>
                   </span>
 
-                  <span className="text-[11px] font-extrabold uppercase tracking-wider bg-emerald-500 text-white px-3 py-0.5 rounded-full shadow-sm flex items-center gap-1 animate-pulse">
-                    <Tag className="w-3.5 h-3.5" />
-                    <span>{t.hero.offerSaveTag}</span>
-                  </span>
+                  {t.hero.offerSaveTag && (
+                    <span className="text-[11px] font-extrabold uppercase tracking-wider bg-emerald-500 text-white px-3 py-0.5 rounded-full shadow-sm flex items-center gap-1 animate-pulse">
+                      <Tag className="w-3.5 h-3.5" />
+                      <span>{t.hero.offerSaveTag}</span>
+                    </span>
+                  )}
                 </div>
 
                 {/* Price Comparison */}
                 <div className="pt-0.5">
                   <div className="flex items-baseline gap-2.5 flex-wrap">
-                    <span className="text-xs sm:text-sm text-purple-200/80 line-through font-bold">
-                      {t.hero.offerOriginalPrice}
-                    </span>
+                    {t.hero.offerOriginalPrice && (
+                      <span className="text-xs sm:text-sm text-purple-200/80 line-through font-bold">
+                        {t.hero.offerOriginalPrice}
+                      </span>
+                    )}
                     <h3 className="text-lg sm:text-xl lg:text-2xl font-extrabold text-yellow-300 tracking-tight">
                       {t.hero.offerText}
                     </h3>

@@ -89,6 +89,7 @@ export interface Translation {
       qualifications: string;
       expBadge: string;
       photo: string;
+      imageClass?: string;
       bio: string;
       achievementBadge: string;
     }[];
@@ -144,7 +145,7 @@ export interface Translation {
 export const translations: Record<Language, Translation> = {
   te: {
     nav: {
-      brandName: "మెడ్సీ IVF",
+      brandName: "వైజాగ్ IVF",
       tagline: "MIRACLES MADE HERE",
       freeCampBadge: "డాక్టర్ సంప్రదింపులు",
       phone: "+91 94949 86611",
@@ -163,18 +164,18 @@ export const translations: Record<Language, Translation> = {
     },
     hero: {
       badge: "",
-      brandTag: "MEDCY IVF",
+      brandTag: "VIZAG IVF",
       headlinePart1: "8,000+ కుటుంబాలు మాతో ఎదిగాయి.",
       headlineHighlight: "మీ కుటుంబం కూడా!",
       headlinePart2: "",
       tagline: "అత్యుత్తమ ఫెర్టిలిటీ సంరక్షణ. తల్లిదండ్రులు కావాలనే మీ ప్రయాణం ఇక్కడే మొదలవుతుంది.",
-      subtext: "రుజువైన విజయవంతమైన రేట్లు, అగ్రశ్రేణి సంతానలేమి నిపుణులు మరియు అందుబాటు ధరల సంపూర్ణ చికిత్సా ప్రణాళికల కోసం మెడ్సీని ఎంచుకోండి. ఎటువంటి దాగి ఉన్న రుసుములు లేదా రిజిస్ట్రేషన్ ఛార్జీలు లేవు — మీరు తల్లిదండ్రులు కావడానికి తోడ్పడే నిజమైన నిపుణుల సంరక్షణ మాత్రమే.",
+      subtext: "రుజువైన విజయవంతమైన రేట్లు, అగ్రశ్రేణి సంతానలేమి నిపుణులు మరియు అందుబాటు ధరల సంపూర్ణ చికిత్సా ప్రణాళికల కోసం వైజాగ్ IVFని ఎంచుకోండి. ఎటువంటి దాగి ఉన్న రుసుములు లేదా రిజిస్ట్రేషన్ ఛార్జీలు లేవు — మీరు తల్లిదండ్రులు కావడానికి తోడ్పడే నిజమైన నిపుణుల సంరక్షణ మాత్రమే.",
       locationBadge: "100 అడుగుల రింగ్ రోడ్, సోనోవిజన్ పక్కన, విజయనగరం",
-      offerBadge: "SPECIAL DISCOUNT PACKAGE OFFER",
-      offerText: "IVF చికిత్స కేవలం ₹1.8 లక్షలకే!",
-      offerOriginalPrice: "సాధారణ మార్కెట్ ధర: ₹1.9 లక్షలు",
-      offerSaveTag: "రూ. 10,000 వర్సెస్ ₹1.9L తక్షణ ఆదా!",
-      offerNote: "గమనిక: బయట క్లినిక్‌లలో రూ. 1.9L ఉండే ప్యాకేజీని మెడ్సీ IVF ప్రత్యేక డిస్కౌంట్ ఆఫర్‌తో రూ. 1.8L కే అందిస్తోంది.",
+      offerBadge: "IVF PACKAGES",
+      offerText: "IVF Packages starting from 1.8* lakhs onwards",
+      offerOriginalPrice: "",
+      offerSaveTag: "",
+      offerNote: "*final amount may vary from patient to patient",
       srikakulamOffer: "శ్రీకాకుళం బ్రాంచ్‌లో సంపూర్ణ IVF చికిత్స కేవలం ₹1.5 లక్షలకే!",
       keyPoints: [
         "ఉచిత నిపుణుల సంప్రదింపులు",
@@ -278,24 +279,36 @@ export const translations: Record<Language, Translation> = {
       disclaimer: "గమనిక: రోగి ఆరోగ్య స్థితి మరియు వైద్యుల నివేదికల ఆధారంగా ఛార్జీలలో స్వల్ప మార్పులు ఉండవచ్చు."
     },
     doctors: {
-      badge: "మా స్పెషలిస్ట్ డాక్టర్",
+      badge: "మా స్పెషలిస్ట్ వైద్యులు",
       title: "మా ఫెర్టిలిటీ నిపుణులు",
-      subtitle: "అనుభవం కలిగిన ప్రముఖ సంతానలేమి వైద్యురాలు మీ కలల కుటుంబాన్ని సాకారం చేయడానికి నిరంతరం కృషి చేస్తున్నారు.",
+      subtitle: "అనుభవం కలిగిన ప్రముఖ సంతానలేమి వైద్యులు మీ కలల కుటుంబాన్ని సాకారం చేయడానికి నిరంతరం కృషి చేస్తున్నారు.",
       list: [
+        {
+          id: "dr-sireesha-rani",
+          name: "డా. శిరీష రాణి",
+          title: "Founder & MD | Senior Infertility Specialist",
+          qualifications: "MBBS, DNB (Ob & Gyn), DRM (Kiel Germany)",
+          expBadge: "20+ YEARS EXP",
+          photo: "/dr-sireesha-rani-v2.png",
+          imageClass: "object-cover object-center",
+          bio: "జర్మన్ కీల్ IVF ప్రొటోకాల్స్, రికరెంట్ ఫెయిల్యూర్స్ మరియు హై-రిస్క్ ప్రెగ్నెన్సీ కేర్‌లో 20+ సంవత్సరాల అనుభవం కలిగిన ప్రముఖ సంతానలేమి నిపుణురాలు.",
+          achievementBadge: "8,000+ Success Stories"
+        },
         {
           id: "dr-swarna-kumari",
           name: "డా. స్వర్ణ కుమారి కొంచాడ",
           title: "Fertility Consultant & Gynecologist",
           qualifications: "MS OBG, Fellow in Reproductive Medicine, Gynec Laparoscopic Surgeon",
           expBadge: "FERTILITY EXPERT",
-          photo: "/dr-swarna-kumari.png",
+          photo: "/dr-swarna-kumari-v2.png",
+          imageClass: "object-cover object-center",
           bio: "వ్యక్తిగతీకరించిన సంతానలేమి చికిత్స ప్రణాళికలు, అడ్వాన్స్‌డ్ IVF, IUI, అండాశయ ప్రేరణ మరియు గర్భధారణ సమయంలో రోగులకు పూర్తి నైతిక మద్దతు అందించడంలో ప్రముఖ వైద్యురాలు.",
           achievementBadge: "Gynec Laparoscopic Surgeon"
         }
       ]
     },
     whyChoose: {
-      title: "మా ప్రత్యేకతలు",
+      title: "వైజాగ్ IVF ప్రత్యేకతలు",
       items: [
         {
           number: "1",
@@ -354,7 +367,7 @@ export const translations: Record<Language, Translation> = {
       ]
     },
     footer: {
-      aboutTitle: "మెడ్సీ IVF & హాస్పిటల్స్",
+      aboutTitle: "వైజాగ్ IVF సెంటర్",
       aboutText: "విజయనగరంలో 8,000 పైగా విజయవంతమైన IVF కేసులతో అత్యుత్తమ సంతానలేమి చికిత్స నందిస్తున్న విశ్వసనీయ ఫెర్టిలిటీ సెంటర్.",
       addressTitle: "ఆసుపత్రి చిరునామా",
       addressValue: "వైజాగ్ IVF సెంటర్, 100 అడుగుల రింగ్ రోడ్, సోనోవిజన్ పక్కన, ఐస్ ఫ్యాక్టరీ ఏరియా, సాయి నాథ్ కాలనీ, విజయనగరం, ఆంధ్రప్రదేశ్ 535002.",
@@ -362,7 +375,7 @@ export const translations: Record<Language, Translation> = {
       phoneValue: "+91 94949 86611",
       hoursTitle: "పని చేయు సమయాలు",
       hoursValue: "సోమవారం - ఆదివారం: ఉదయం 9:00 - సాయంత్రం 6:00",
-      copyright: "© 2026 MEDCY IVF & Hospitals. సర్వ హక్కులూ ప్రత్యేకించబడ్డాయి."
+      copyright: "© 2026 VIZAG IVF Centre. సర్వ హక్కులూ ప్రత్యేకించబడ్డాయి."
     },
     modal: {
       title: "అపాయింట్మెంట్ నమోదైంది! 🎉",
@@ -379,7 +392,7 @@ export const translations: Record<Language, Translation> = {
   },
   en: {
     nav: {
-      brandName: "MEDCY IVF",
+      brandName: "VIZAG IVF",
       tagline: "MIRACLES MADE HERE",
       freeCampBadge: "DOCTOR CONSULTATION",
       phone: "+91 94949 86611",
@@ -398,18 +411,18 @@ export const translations: Record<Language, Translation> = {
     },
     hero: {
       badge: "",
-      brandTag: "MEDCY IVF",
+      brandTag: "VIZAG IVF",
       headlinePart1: "8,000+ Families Grew With Us.",
       headlineHighlight: "Yours Can Too.",
       headlinePart2: "",
       tagline: "Expert fertility care. Your journey to parenthood starts here.",
-      subtext: "Choose Medcy for proven success rates, top-tier fertility specialists, and highly affordable, all-inclusive treatment plans. No hidden fees, no registration charges—just genuine, expert care to help you become parents.",
+      subtext: "Choose Vizag IVF for proven success rates, top-tier fertility specialists, and highly affordable, all-inclusive treatment plans. No hidden fees, no registration charges—just genuine, expert care to help you become parents.",
       locationBadge: "100 Ft Ring Rd, beside Sonovision, Vizianagaram",
-      offerBadge: "SPECIAL DISCOUNT PACKAGE OFFER",
-      offerText: "IVF TREATMENT AT ₹1.8 LAKHS ONLY",
-      offerOriginalPrice: "Standard Market Price: ₹1.9 Lakhs",
-      offerSaveTag: "SAVE ₹10,000 VS REGULAR ₹1.9L!",
-      offerNote: "Note: Standard market clinics charge ₹1.9 Lakhs — Medcy IVF provides complete treatment package at ₹1.8 Lakhs.",
+      offerBadge: "IVF PACKAGES",
+      offerText: "IVF Packages starting from 1.8* lakhs onwards",
+      offerOriginalPrice: "",
+      offerSaveTag: "",
+      offerNote: "*final amount may vary from patient to patient",
       srikakulamOffer: "In Srikakulam Branch, Complete IVF Treatment at ₹1.5 Lakhs Only",
       keyPoints: [
         "Free Expert Consultation",
@@ -513,24 +526,36 @@ export const translations: Record<Language, Translation> = {
       disclaimer: "Note: Treatment fees may vary slightly depending on individualized clinical evaluation."
     },
     doctors: {
-      badge: "MEET THE EXPERT",
-      title: "Meet the Expert",
-      subtitle: "Trusted medical leadership with proven experience in complex infertility & gynecological procedures.",
+      badge: "MEET OUR SPECIALISTS",
+      title: "Meet Our Fertility Specialists",
+      subtitle: "Trusted medical leadership with proven experience in complex infertility & advanced reproductive medicine.",
       list: [
+        {
+          id: "dr-sireesha-rani",
+          name: "Dr. Sireesha Rani",
+          title: "Founder & MD | Senior Infertility Specialist",
+          qualifications: "MBBS, DNB (Ob & Gyn), DRM (Kiel Germany)",
+          expBadge: "20+ YEARS EXP",
+          photo: "/dr-sireesha-rani-v2.png",
+          imageClass: "object-cover object-center",
+          bio: "Pioneer in reproductive medicine with advanced specialization in German Kiel IVF protocols, recurrent failures, and high-risk pregnancy care.",
+          achievementBadge: "8,000+ Success Stories"
+        },
         {
           id: "dr-swarna-kumari",
           name: "Dr. Swarna Kumari Konchada",
           title: "Fertility Consultant & Gynecologist",
           qualifications: "MS OBG, Fellow in Reproductive Medicine, Gynec Laparoscopic Surgeon",
           expBadge: "FERTILITY EXPERT",
-          photo: "/dr-swarna-kumari.png",
+          photo: "/dr-swarna-kumari-v2.png",
+          imageClass: "object-cover object-center",
           bio: "She provides personalized infertility treatment plans, including advanced In Vitro Fertilization (IVF), Intrauterine Insemination (IUI), ovulation induction, and emotional support throughout the conception process.",
           achievementBadge: "Gynec Laparoscopic Surgeon"
         }
       ]
     },
     whyChoose: {
-      title: "Why Choose Medcy",
+      title: "Why Choose Vizag IVF",
       items: [
         {
           number: "1",
@@ -589,7 +614,7 @@ export const translations: Record<Language, Translation> = {
       ]
     },
     footer: {
-      aboutTitle: "MEDCY IVF & Hospitals",
+      aboutTitle: "VIZAG IVF CENTRE",
       aboutText: "Vizianagaram's premier fertility & reproductive medicine institute with 8,000+ successful IVF cases.",
       addressTitle: "Hospital Address",
       addressValue: "Vizag IVF - Best Fertility Clinic in Vizianagaram, Vizag IVF Centre, 100 Ft Ring Rd, beside Sonovision, Ice Factory Area, Sai Nath Colony, Vizianagaram, Andhra Pradesh 535002",
@@ -597,7 +622,7 @@ export const translations: Record<Language, Translation> = {
       phoneValue: "+91 94949 86611",
       hoursTitle: "Working Hours",
       hoursValue: "Mon - Sun: 9:00 AM - 6:00 PM",
-      copyright: "© 2026 MEDCY IVF & Hospitals. All rights reserved."
+      copyright: "© 2026 VIZAG IVF Centre. All rights reserved."
     },
     modal: {
       title: "Appointment Reserved! 🎉",
