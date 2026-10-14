@@ -7,36 +7,36 @@ interface GoogleReviewsProps {
 }
 
 export const GoogleReviews: React.FC<GoogleReviewsProps> = () => {
-  // Exact Google Review Link provided by client
-  const googleMapsReviewsUrl = "https://share.google/UXCfHLD0TRKeyrYjr";
+  // Exact Google Review Link provided by client for Vizag IVF Vizianagaram GMB page
+  const googleMapsReviewsUrl = "https://share.google/hkf88WsNY3wq6dz5W";
 
   const reviews = [
     {
       id: 1,
-      name: "Pradeep Kumar",
-      initial: "P",
+      name: "Santhosh Nagam",
+      initial: "S",
       avatarBg: "bg-[#652D6C]",
       rating: 5,
-      time: "5 months ago",
-      text: "I am extremely grateful to the entire team at Vizag IVF hospital for making our IVF journey successful. From the very beginning, Dr. Seerisha Rani garu and support staff were highly professional, compassionate, and supportive. The doctor explained every step of the IVF process clearly, which helped us feel confident and comfortable throughout the treatment. Thanks to their expertise and dedication, we are now blessed with positive results, and we highly recommend this hospital to anyone considering IVF treatment!"
+      time: "4 months ago",
+      text: "We consulted several hospitals in Srikakulam and Visakhapatnam, but unfortunately did not get the right guidance or clear understanding of our situation. We felt disappointed about our chances. Then we visited Vizag IVF Centre Vizianagaram — Dr. Swarna Kumari madam and the entire team gave us clear guidance, personalized care, and immense confidence throughout our treatment. Very thankful for our positive result!"
     },
     {
       id: 2,
-      name: "Verified Patient",
-      initial: "V",
+      name: "Pravallika Bonumahanthi",
+      initial: "P",
       avatarBg: "bg-teal-700",
       rating: 5,
-      time: "Google Review",
-      text: "Thankyou Dr.B sireesha rani for giving us fruitful result of conceiving after long wait of 10yrs , underwent two ivf and iui treatment but no result thankyou madam and team vizag ivf centre"
+      time: "a year ago",
+      text: "I’m so happy to share that I underwent my first IUI treatment under the care of Dr. Swarna madam, and I got pregnant! 💕 She is an amazing and compassionate doctor who guided me through every step of the process with so much patience and care. Truly grateful for the excellent care, timely response, and supportive hospital staff!"
     },
     {
       id: 3,
-      name: "Happy Parent",
-      initial: "H",
+      name: "Indira Appalanaidu",
+      initial: "I",
       avatarBg: "bg-amber-700",
       rating: 5,
-      time: "Google Review",
-      text: "Thankyou vizag IVF centre taken treatment in 2021 got success have a healthy baby baby age 5yrs we are greatful dr b sireesha Rani madam and team."
+      time: "a year ago",
+      text: "Feeling happy to be IVF positive! I am very thankful to Dr. Swarna Kumari madam and the hospital staff. They provide personalized treatment plans and great emotional support during the IVF journey. Highly recommend Vizag IVF Centre in Vizianagaram to every couple dreaming of parenthood!"
     }
   ];
 
@@ -44,7 +44,7 @@ export const GoogleReviews: React.FC<GoogleReviewsProps> = () => {
     <section id="reviews" className="py-8 sm:py-10 bg-gradient-to-b from-[#FAF6FA] to-white relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
-        {/* Header with Google Logo & 4.8 Rating */}
+        {/* Header with Google Logo & 4.9 Rating */}
         <div className="text-center max-w-2xl mx-auto mb-6 sm:mb-8 space-y-2">
           
           {/* Google Pill Badge */}
@@ -62,16 +62,16 @@ export const GoogleReviews: React.FC<GoogleReviewsProps> = () => {
             What Our Families Say
           </h2>
 
-          {/* Rating Summary Bar: 4.8 / 483 Reviews matching Google Maps */}
+          {/* Rating Summary Bar: 4.9 / 136 Reviews matching Google Maps */}
           <div className="flex items-center justify-center gap-2 pt-1">
-            <span className="text-xl font-black text-[#2A102D]">4.8</span>
+            <span className="text-xl font-black text-[#2A102D]">4.9</span>
             <div className="flex items-center gap-0.5 text-amber-400">
               {[...Array(5)].map((_, i) => (
                 <Star key={i} className="w-4 h-4 fill-amber-400" />
               ))}
             </div>
             <span className="text-xs font-bold text-[#56335B] bg-[#FAF3FB] px-2.5 py-0.5 rounded-full border border-[#652D6C]/15">
-              (483) Google Reviews
+              (136) Google Reviews
             </span>
           </div>
         </div>
@@ -142,7 +142,7 @@ export const GoogleReviews: React.FC<GoogleReviewsProps> = () => {
               <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z"/>
               <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z"/>
             </svg>
-            <span>Read All 483+ Reviews on Google</span>
+            <span>Read All 136+ Reviews on Google</span>
             <ExternalLink className="w-3.5 h-3.5 text-gray-400 group-hover:text-[#652D6C] group-hover:translate-x-0.5 transition-transform" />
           </a>
         </div>

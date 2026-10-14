@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Calendar, MapPin, User, Phone, ChevronRight, Award, Heart, Star, ShieldCheck, Tag } from 'lucide-react';
+import { Calendar, MapPin, User, Phone, ChevronRight, ChevronDown, Award, Heart, Star, ShieldCheck, Tag } from 'lucide-react';
 import { Translation } from '../data/translations';
 
 interface HeroProps {
@@ -67,10 +67,10 @@ export const Hero: React.FC<HeroProps> = ({ t, onFormSubmit }) => {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-12 items-center gap-6 lg:gap-7 xl:gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-12 items-center gap-8 lg:gap-8 xl:gap-12">
           
           {/* Left Column: Headlines & Discount Offer (Matter First on Mobile & Desktop) */}
-          <div className="space-y-3.5 sm:space-y-4 lg:col-span-7 order-1 lg:order-1">
+          <div className="space-y-3.5 sm:space-y-4 lg:col-span-6 xl:col-span-6 order-1 lg:order-1">
             
             {/* Brand Eyebrow: MEDCY IVF (Poppins SemiBold) */}
             {t.hero.brandTag && (
@@ -144,45 +144,45 @@ export const Hero: React.FC<HeroProps> = ({ t, onFormSubmit }) => {
           </div>
 
           {/* Right Column: Registration Form (Comes after matter on mobile) */}
-          <div className="lg:col-span-5 order-2 lg:order-2 w-full max-w-[420px] mx-auto lg:mx-0">
-            <div className="bg-white/95 backdrop-blur-md relative shadow-2xl border border-[#652D6C]/20 px-6 pt-7 pb-8 sm:px-7 sm:pt-8 sm:pb-9 lg:pt-9 lg:pb-10 rounded-2xl">
+          <div className="lg:col-span-6 xl:col-span-6 order-2 lg:order-2 w-full max-w-[540px] xl:max-w-[560px] mx-auto lg:mx-0">
+            <div className="bg-white/95 backdrop-blur-md relative shadow-2xl border-2 border-[#652D6C]/20 px-6 py-7 sm:px-8 sm:py-8 lg:px-8 lg:py-8 xl:px-9 xl:py-9 rounded-3xl">
               
               {/* Form Header */}
               <div className="text-center mb-4 sm:mb-5">
-                <h2 className="text-xl sm:text-2xl font-extrabold text-[#2A102D] tracking-tight">
+                <h2 className="text-2xl sm:text-3xl font-black text-[#2A102D] tracking-tight">
                   {t.hero.formTitle}
                 </h2>
               </div>
 
               {/* Form */}
-              <form onSubmit={handleSubmit} className="space-y-3 sm:space-y-3.5">
+              <form onSubmit={handleSubmit} className="space-y-3.5 sm:space-y-4">
                 
                 {/* Full Name Field */}
                 <div>
-                  <label className="block text-xs font-bold text-[#2A102D] mb-1">
+                  <label className="h-5 flex items-center text-xs sm:text-sm font-extrabold text-[#2A102D] mb-1.5">
                     {t.hero.fullNameLabel}
                   </label>
                   <div className="relative">
-                    <User className="w-4 h-4 absolute left-3 top-3 text-[#652D6C]" />
+                    <User className="w-5 h-5 absolute left-3.5 top-3.5 text-[#652D6C]" />
                     <input
                       type="text"
                       required
                       value={formData.name}
                       onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                       placeholder={t.hero.fullNamePlaceholder}
-                      className="w-full pl-9 pr-3.5 py-2.5 text-xs sm:text-sm bg-white border border-[#652D6C]/25 rounded-xl focus:ring-2 focus:ring-[#9A389F] focus:border-[#652D6C] outline-none font-medium text-[#2A102D] shadow-sm transition-all"
+                      className="w-full pl-11 pr-4 py-3 sm:py-3.5 text-sm sm:text-base bg-white border border-[#652D6C]/30 rounded-xl focus:ring-2 focus:ring-[#9A389F] focus:border-[#652D6C] outline-none font-semibold text-[#2A102D] shadow-xs transition-all"
                     />
                   </div>
                 </div>
 
                 {/* Mobile & Age Row */}
-                <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-3.5">
                   <div className="sm:col-span-2">
-                    <label className="block text-xs font-bold text-[#2A102D] mb-1">
+                    <label className="h-5 flex items-center text-xs sm:text-sm font-extrabold text-[#2A102D] mb-1.5 whitespace-nowrap">
                       {t.hero.mobileLabel}
                     </label>
                     <div className="relative">
-                      <Phone className="w-4 h-4 absolute left-3 top-3 text-[#652D6C]" />
+                      <Phone className="w-5 h-5 absolute left-3.5 top-3.5 text-[#652D6C]" />
                       <input
                         type="tel"
                         required
@@ -190,13 +190,13 @@ export const Hero: React.FC<HeroProps> = ({ t, onFormSubmit }) => {
                         value={formData.phone}
                         onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                         placeholder={t.hero.mobilePlaceholder}
-                        className="w-full pl-9 pr-3.5 py-2.5 text-xs sm:text-sm bg-white border border-[#652D6C]/25 rounded-xl focus:ring-2 focus:ring-[#9A389F] focus:border-[#652D6C] outline-none font-medium text-[#2A102D] shadow-sm transition-all"
+                        className="w-full pl-11 pr-4 py-3 sm:py-3.5 text-sm sm:text-base bg-white border border-[#652D6C]/30 rounded-xl focus:ring-2 focus:ring-[#9A389F] focus:border-[#652D6C] outline-none font-semibold text-[#2A102D] shadow-xs transition-all"
                       />
                     </div>
                   </div>
 
                   <div>
-                    <label className="block text-xs font-bold text-[#2A102D] mb-1">
+                    <label className="h-5 flex items-center text-xs sm:text-sm font-extrabold text-[#2A102D] mb-1.5 whitespace-nowrap justify-center sm:justify-start">
                       {t.hero.ageLabel}
                     </label>
                     <input
@@ -206,43 +206,43 @@ export const Hero: React.FC<HeroProps> = ({ t, onFormSubmit }) => {
                       value={formData.age}
                       onChange={(e) => setFormData({ ...formData, age: e.target.value })}
                       placeholder={t.hero.agePlaceholder}
-                      className="w-full px-2.5 py-2.5 text-xs sm:text-sm bg-white border border-[#652D6C]/25 rounded-xl focus:ring-2 focus:ring-[#9A389F] focus:border-[#652D6C] outline-none font-medium text-center text-[#2A102D] shadow-sm transition-all"
+                      className="w-full px-3 py-3 sm:py-3.5 text-sm sm:text-base bg-white border border-[#652D6C]/30 rounded-xl focus:ring-2 focus:ring-[#9A389F] focus:border-[#652D6C] outline-none font-semibold text-center text-[#2A102D] shadow-xs transition-all"
                     />
                   </div>
                 </div>
 
-                {/* Date & Time Slot Row */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                {/* Date & Time Slot Row (Aligned in exact line order) */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
                   <div>
-                    <label className="block text-xs font-bold text-[#2A102D] mb-1">
+                    <label className="h-5 flex items-center text-xs sm:text-sm font-extrabold text-[#2A102D] mb-1.5 whitespace-nowrap">
                       {t.hero.dateLabel}
                     </label>
-                    <div className="relative">
-                      <Calendar className="w-4 h-4 absolute left-3 top-3 text-[#652D6C] pointer-events-none" />
-                      <input
-                        type="date"
-                        required
-                        min={new Date().toISOString().split('T')[0]}
-                        value={formData.date}
-                        onChange={(e) => setFormData({ ...formData, date: e.target.value })}
-                        className="w-full pl-9 pr-2.5 py-2.5 text-xs sm:text-sm bg-white border border-[#652D6C]/25 rounded-xl focus:ring-2 focus:ring-[#9A389F] focus:border-[#652D6C] outline-none font-semibold text-[#2A102D] shadow-sm transition-all"
-                      />
-                    </div>
+                    <input
+                      type="date"
+                      required
+                      min={new Date().toISOString().split('T')[0]}
+                      value={formData.date}
+                      onChange={(e) => setFormData({ ...formData, date: e.target.value })}
+                      className="w-full px-3.5 py-3 sm:py-3.5 text-sm sm:text-base bg-white border border-[#652D6C]/30 rounded-xl focus:ring-2 focus:ring-[#9A389F] focus:border-[#652D6C] outline-none font-semibold text-[#2A102D] shadow-xs transition-all cursor-pointer"
+                    />
                   </div>
 
                   <div>
-                    <label className="block text-xs font-bold text-[#2A102D] mb-1">
+                    <label className="h-5 flex items-center text-xs sm:text-sm font-extrabold text-[#2A102D] mb-1.5 whitespace-nowrap">
                       {t.hero.slotLabel}
                     </label>
-                    <select
-                      value={formData.slot}
-                      onChange={(e) => setFormData({ ...formData, slot: e.target.value })}
-                      className="w-full px-2.5 py-2.5 text-xs sm:text-sm bg-white border border-[#652D6C]/25 rounded-xl focus:ring-2 focus:ring-[#9A389F] focus:border-[#652D6C] outline-none font-semibold text-[#2A102D] shadow-sm transition-all cursor-pointer"
-                    >
-                      {t.hero.slotOptions.map((opt, i) => (
-                        <option key={i} value={opt}>{opt}</option>
-                      ))}
-                    </select>
+                    <div className="relative">
+                      <select
+                        value={formData.slot}
+                        onChange={(e) => setFormData({ ...formData, slot: e.target.value })}
+                        className="w-full px-3.5 pr-8 py-3 sm:py-3.5 text-sm sm:text-base bg-white border border-[#652D6C]/30 rounded-xl focus:ring-2 focus:ring-[#9A389F] focus:border-[#652D6C] outline-none font-semibold text-[#2A102D] shadow-xs transition-all cursor-pointer appearance-none"
+                      >
+                        {t.hero.slotOptions.map((opt, i) => (
+                          <option key={i} value={opt}>{opt}</option>
+                        ))}
+                      </select>
+                      <ChevronDown className="w-4 h-4 text-[#652D6C] absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none" />
+                    </div>
                   </div>
                 </div>
 
@@ -250,13 +250,13 @@ export const Hero: React.FC<HeroProps> = ({ t, onFormSubmit }) => {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full btn-accent rounded-xl font-extrabold text-sm sm:text-base py-3 px-5 flex items-center justify-center gap-2 shadow-lg mt-2 group hover:scale-[1.01] active:scale-95 transition-all cursor-pointer"
+                  className="w-full btn-accent rounded-xl font-black text-base sm:text-lg py-3.5 sm:py-4 px-6 flex items-center justify-center gap-2.5 shadow-xl mt-2.5 group hover:scale-[1.01] active:scale-95 transition-all cursor-pointer"
                 >
                   <span>{isSubmitting ? t.hero.submitting : t.hero.submitButton}</span>
-                  <ChevronRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                  <ChevronRight className="w-5 h-5 sm:w-6 sm:h-6 group-hover:translate-x-1.5 transition-transform" />
                 </button>
 
-                <p className="text-xs text-center text-[#56335B] font-medium pt-1 leading-relaxed">
+                <p className="text-xs sm:text-[13px] text-center text-[#56335B] font-semibold pt-1 leading-relaxed">
                   <span className="inline-block mr-1">🔒</span>
                   <span>{t.hero.privacyNote}</span>
                 </p>

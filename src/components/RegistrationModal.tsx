@@ -71,18 +71,18 @@ export const RegistrationModal: React.FC<RegistrationModalProps> = ({ isOpen, on
           
           {/* Full Name */}
           <div>
-            <label className="block text-xs font-bold text-[#2A102D] mb-1">
+            <label className="block text-xs sm:text-sm font-bold text-[#2A102D] mb-1">
               {t.hero.fullNameLabel}
             </label>
             <div className="relative">
-              <User className="w-4 h-4 absolute left-3.5 top-3.5 text-[#56335B]" />
+              <User className="w-5 h-5 absolute left-3.5 top-3.5 text-[#56335B]" />
               <input
                 type="text"
                 required
                 value={formData.name}
                 onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                 placeholder={t.hero.fullNamePlaceholder}
-                className="w-full pl-10 pr-4 py-2.5 text-sm bg-white border border-[#652D6C]/25 rounded-xl focus:ring-2 focus:ring-[#9A389F] focus:border-[#652D6C] outline-none font-medium"
+                className="w-full pl-11 pr-4 py-3 text-sm sm:text-base bg-white border border-[#652D6C]/25 rounded-xl focus:ring-2 focus:ring-[#9A389F] focus:border-[#652D6C] outline-none font-medium"
               />
             </div>
           </div>
@@ -90,11 +90,11 @@ export const RegistrationModal: React.FC<RegistrationModalProps> = ({ isOpen, on
           {/* Phone & Age */}
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
             <div className="sm:col-span-2">
-              <label className="block text-xs font-bold text-[#2A102D] mb-1">
+              <label className="block text-xs sm:text-sm font-bold text-[#2A102D] mb-1">
                 {t.hero.mobileLabel}
               </label>
               <div className="relative">
-                <Phone className="w-4 h-4 absolute left-3.5 top-3.5 text-[#56335B]" />
+                <Phone className="w-5 h-5 absolute left-3.5 top-3.5 text-[#56335B]" />
                 <input
                   type="tel"
                   required
@@ -102,13 +102,13 @@ export const RegistrationModal: React.FC<RegistrationModalProps> = ({ isOpen, on
                   value={formData.phone}
                   onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                   placeholder={t.hero.mobilePlaceholder}
-                  className="w-full pl-10 pr-4 py-2.5 text-sm bg-white border border-[#652D6C]/25 rounded-xl focus:ring-2 focus:ring-[#9A389F] focus:border-[#652D6C] outline-none font-medium"
+                  className="w-full pl-11 pr-4 py-3 text-sm sm:text-base bg-white border border-[#652D6C]/25 rounded-xl focus:ring-2 focus:ring-[#9A389F] focus:border-[#652D6C] outline-none font-medium"
                 />
               </div>
             </div>
 
             <div>
-              <label className="block text-xs font-bold text-[#2A102D] mb-1">
+              <label className="block text-xs sm:text-sm font-bold text-[#2A102D] mb-1">
                 {t.hero.ageLabel}
               </label>
               <input
@@ -118,7 +118,7 @@ export const RegistrationModal: React.FC<RegistrationModalProps> = ({ isOpen, on
                 value={formData.age}
                 onChange={(e) => setFormData({ ...formData, age: e.target.value })}
                 placeholder={t.hero.agePlaceholder}
-                className="w-full px-3 py-2.5 text-sm bg-white border border-[#652D6C]/25 rounded-xl focus:ring-2 focus:ring-[#9A389F] focus:border-[#652D6C] outline-none font-medium text-center"
+                className="w-full px-3 py-3 text-sm sm:text-base bg-white border border-[#652D6C]/25 rounded-xl focus:ring-2 focus:ring-[#9A389F] focus:border-[#652D6C] outline-none font-medium text-center"
               />
             </div>
           </div>
@@ -126,30 +126,30 @@ export const RegistrationModal: React.FC<RegistrationModalProps> = ({ isOpen, on
           {/* Date & Slot */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             <div>
-              <label className="block text-xs font-bold text-[#2A102D] mb-1">
+              <label className="block text-xs sm:text-sm font-bold text-[#2A102D] mb-1">
                 {t.hero.dateLabel}
               </label>
               <div className="relative">
-                <Calendar className="w-4 h-4 absolute left-3 top-3 text-[#56335B] pointer-events-none" />
+                <Calendar className="w-5 h-5 absolute left-3.5 top-3.5 text-[#56335B] pointer-events-none" />
                 <input
                   type="date"
                   required
                   min={new Date().toISOString().split('T')[0]}
                   value={formData.date}
                   onChange={(e) => setFormData({ ...formData, date: e.target.value })}
-                  className="w-full pl-9 pr-3 py-2.5 text-xs sm:text-sm bg-white border border-[#652D6C]/25 rounded-xl focus:ring-2 focus:ring-[#9A389F] focus:border-[#652D6C] outline-none font-semibold text-[#2A102D]"
+                  className="w-full pl-11 pr-3 py-3 text-sm sm:text-base bg-white border border-[#652D6C]/25 rounded-xl focus:ring-2 focus:ring-[#9A389F] focus:border-[#652D6C] outline-none font-semibold text-[#2A102D]"
                 />
               </div>
             </div>
 
             <div>
-              <label className="block text-xs font-bold text-[#2A102D] mb-1">
+              <label className="block text-xs sm:text-sm font-bold text-[#2A102D] mb-1">
                 {t.hero.slotLabel}
               </label>
               <select
                 value={formData.slot}
                 onChange={(e) => setFormData({ ...formData, slot: e.target.value })}
-                className="w-full px-3 py-2.5 text-xs sm:text-sm bg-white border border-[#652D6C]/25 rounded-xl focus:ring-2 focus:ring-[#9A389F] focus:border-[#652D6C] outline-none font-semibold text-[#2A102D]"
+                className="w-full px-3 py-3 text-sm sm:text-base bg-white border border-[#652D6C]/25 rounded-xl focus:ring-2 focus:ring-[#9A389F] focus:border-[#652D6C] outline-none font-semibold text-[#2A102D]"
               >
                 {t.hero.slotOptions.map((opt, i) => (
                   <option key={i} value={opt}>{opt}</option>
@@ -162,7 +162,7 @@ export const RegistrationModal: React.FC<RegistrationModalProps> = ({ isOpen, on
           <button
             type="submit"
             disabled={isSubmitting}
-            className="w-full btn-accent py-3.5 px-6 rounded-xl font-black text-base flex items-center justify-center gap-2 shadow-lg mt-3 group"
+            className="w-full btn-accent py-4 px-6 rounded-xl font-black text-base sm:text-lg flex items-center justify-center gap-2 shadow-lg mt-3 group"
           >
             <span>{isSubmitting ? t.hero.submitting : t.hero.submitButton}</span>
             <ChevronRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
